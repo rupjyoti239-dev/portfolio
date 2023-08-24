@@ -7,6 +7,7 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Nunito', sans-serif;
+  scroll-behavior: smooth;
 }
 
 html{
@@ -14,7 +15,7 @@ html{
 }
 
 :root{
-  --bgc: #F7F7F7;
+  --bgc: #E5ECFB;
   --white: #fff;
   --black: #262626;
   --blue: #7684FF;
@@ -42,7 +43,7 @@ h2{
 
 }
 h3{
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: var(--dark-blue);
   font-weight: 500;
    font-family: 'Roboto', sans-serif;
@@ -380,16 +381,77 @@ margin-bottom: 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px,auto));
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 5rem;
 }
 
 .project-container .card{
   border: 1px solid var(--black);
   max-width: 380px;
-  padding: 1rem ;
-  background-color: var(--bgc);
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 10px;
 }
+.project-container .card img{
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.project-container .card h3{
+  margin-bottom: 0.6rem;
+}
+.project-container .card p{
+  margin-bottom: 0.6rem;
+}
+.card .links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.links a{
+  background-color: var(--dark-blue);
+  box-shadow: 1px 1px 2px var(--blue);
+  padding: 0.4rem 0.8rem;
+  color: var(--white);
+  font-size: 1.4rem;
+  border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------
+                   FOOTER SECTION
+----------------------------------------------------*/
+footer{
+  background-color: var(--blue);
+}
+.footer{
+  padding: 5rem 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,auto));
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8rem;
+}
+.footer-card{
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-direction: column;
+  max-width: 350px;
+}
+.footer-card a{
+  font-size: 1.4rem;
+}
+
 
 
 
@@ -421,7 +483,7 @@ h2{
   font-size: 2.5rem;
 }
 h3{
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 h4{
   font-size: 1.5rem;
@@ -434,6 +496,14 @@ h6{
 }
 p{
   font-size: 1.6rem;
+}
+
+.footer{
+ 
+  grid-template-columns: repeat(auto-fit, minmax(270px,auto));
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6rem;
 }
 
 }
@@ -453,7 +523,7 @@ h2{
   font-size: 2rem;
 }
 h3{
-  font-size: 1.87rem;
+  font-size: 1.6rem;
 }
 h4{
   font-size: 1.4rem;
@@ -517,11 +587,18 @@ header{
 .skills .container{
   width: 75%;
 }
-
+.project{
+  padding: 5rem 4rem;
+}
 .project-container{
   grid-template-columns: repeat(auto-fit, minmax(260px,auto));
 }
 
+.footer{
+  padding: 3rem 4rem;
+  gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px,auto));
+}
 
 }
 
@@ -567,12 +644,31 @@ text-align: center;
   height: 5px;
 }
 
+
+.links a{
+  padding: 0.3rem 0.6rem;
+  color: var(--white);
+  font-size: 1.3rem;
+  border-radius: 1rem;
+}
+.project{
+  padding: 5rem 2rem;
+}
 .project-container{
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+  grid-template-columns: repeat(auto-fit, minmax(230px,auto));
+}
+
+.footer{
+  padding: 3rem 2rem;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px,auto));
 }
 
 }
+
+
+
 
 
 
@@ -586,7 +682,7 @@ text-align: center;
 .hero img{
   width: 60%;
 }
-.project-container{
+.project-container, .footer{
   grid-template-columns: repeat(auto-fit, minmax(180px,auto));
 }
 }
